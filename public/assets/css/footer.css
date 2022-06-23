@@ -1,0 +1,98 @@
+.svg a{
+    color: black;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.paginate a{
+    color: black;
+}
+.paginate a.active{
+    color: darkgoldenrod;
+}
+.animate{
+    animation: x 10s linear infinite;
+    position: relative;
+}
+@keyframes x {
+    0% {left: 0%;}
+    100%{left: 100%;}
+
+}
+.shfooter .collapse {
+    display: inherit;
+}
+@media (max-width: 767px) {
+    .shfooter ul {
+        margin-bottom: 0;
+    }
+
+    .shfooter .collapse {
+        display: none;
+    }
+
+    .shfooter .collapse.show {
+        display: block;
+    }
+
+    .shfooter .title .bi.bi-caret-up-fill,
+    .shfooter .title[aria-expanded="true"] .bi.bi-caret-down-fill {
+        display: none;
+    }
+
+    .shfooter .title[aria-expanded="true"] .bi.bi-caret-up-fill{
+        display: block;
+    }
+
+    .shfooter .navbar-toggler {
+        display: inline-block;
+        padding: 0;
+    }
+}
+
+.resize {
+    text-align: center;
+}
+.resize {
+    margin-top: 3rem;
+    font-size: 1.25rem;
+}
+/*RESIZESCREEN ANIMATION*/
+.bi.bi-caret-down-fill {
+    animation: rightanime 1s linear infinite;
+}
+
+.bi.bi-caret-down-fill {
+    animation: leftanime 1s linear infinite;
+}
+@keyframes rightanime {
+    50% {
+        transform: translateX(10px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(10px);
+        opacity: 0;
+    }
+}
+@keyframes leftanime {
+    50% {
+        transform: translateX(-10px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+}
+nav svg{
+    max-height: 20px;
+}
+nav svg {
+    color: #000;
+}
+
+.empty-cate , .empty-post{
+    background-image: url('no_data.png');
+    height: 400px;
+    background-position: center;
+}
